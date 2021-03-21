@@ -1,0 +1,9 @@
+#git ignore files
+#all your ignore files/folders go here
+#examples
+#ignore folder /test 
+/test
+#ignore txt documents
+NepozeljniTekst.txt
+#ignore index test file
+index.html
