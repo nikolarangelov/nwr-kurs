@@ -5,5 +5,5 @@
 /test
 #ignore txt documents
 NepozeljniTekst.txt
-#ignore index test file
-index.html
+#ignore index-test.html
+index-test.html
