@@ -5,15 +5,15 @@ body {
   padding: 0;
 }
 
-body .nav.nav_item {
+.nav.nav_item {
   color: purple;
 }
 
-body .nav_item {
+.nav_item {
   color: green;
 }
 
-body .nav body .nav_item {
+.nav .nav_item {
   color: orange;
 }
 /*# sourceMappingURL=style.css.map */

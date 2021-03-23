@@ -7,15 +7,16 @@ body{
 
 
 
-    .nav{
-        &.nav_item {           
-            color:$primary-color;
-        }
-        &_item{
-            color: green;
-        }
-        #{&}_item {
-            color: orange;
-        }
+    
+}
+.nav{
+    &.nav_item {           
+        color:$primary-color;
+    }
+    &_item{
+        color: green;
+    }
+    #{&}_item {
+        color: orange;
     }
 }
