@@ -1,0 +1,21 @@
+@import "variables";
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+
+    .nav{
+        &.nav_item {           
+            color:$primary-color;
+        }
+        &_item{
+            color: green;
+        }
+        #{&}_item {
+            color: orange;
+        }
+    }
+}
