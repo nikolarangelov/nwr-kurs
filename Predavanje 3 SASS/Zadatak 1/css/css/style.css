@@ -1,0 +1,14 @@
+.main {
+  background-color: aliceblue;
+}
+
+.main p {
+  color: green;
+  background-color: transparent;
+}
+
+p {
+  color: white;
+  background-color: #123456;
+}
+/*# sourceMappingURL=style.css.map */
