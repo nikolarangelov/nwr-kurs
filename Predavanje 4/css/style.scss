@@ -1,0 +1,66 @@
+$gradient1:linear-gradient(to right, #1b839b, #0a7997); 
+$gradientPoly:  -webkit-linear-gradient(to right, #d3d032, #750828);
+$colorGradient: #00f260;
+$boxShadow:  0px 0px 5px 20px gray;
+
+// Creating Mixins-----------------------------------------------------------------------------------------
+@mixin fontStyle {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: #ff0000;
+}
+@mixin bgGradient {
+    background: #c6dce2; 
+    background: $gradientPoly;
+    background: $gradientPoly;
+    box-shadow:$boxShadow;
+    .alert{
+        color: red;
+    }
+
+}
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin message ($boja, $hoverBoja) {
+    color: $boja;
+
+
+    &:hover{
+        color: lighten($color: $hoverBoja, $amount: 40);
+    }
+
+}
+
+
+// --------------------------------------------------------------------------------------------------------
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    @include bgGradient();
+    @include displayFlex();
+}
+p{
+    @include fontStyle();
+}
+.box{
+    width: 200px;
+    height: 100px;
+    @include bgGradient();
+}
+.message-warning{
+    margin-top: 2rem;
+    @include message(orange, red);
+}
+.message-alert{
+    @include message(red, orange);
+}
+.message-info{
+    @include message(blue, green);
+}
