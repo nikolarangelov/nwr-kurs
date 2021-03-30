@@ -1,0 +1,61 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container .post h1 {
+  color: green;
+}
+
+.container .post h2 {
+  color: greenyellow;
+}
+
+.container .post p {
+  color: blue;
+}
+
+.container .list ul {
+  border: 2px solid red;
+}
+
+.container .list ul li {
+  border: 1px solid yellow;
+}
+
+.container .list ul li .link:visited {
+  color: greenyellow;
+}
+
+.container .list ul li .link:hover {
+  color: orange;
+}
+
+.container .list ul li .link:active {
+  color: blue;
+}
+
+.container .list ul li .link.alert {
+  color: red;
+}
+
+.container .input-group .btn[type="submit"] {
+  border: 2px solid green;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: green;
+}
+
+.container .input-group div[class*="input-field"] label {
+  display: block;
+}
+
+.container .input-group .input-field input {
+  border: 2px solid #FF9800;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

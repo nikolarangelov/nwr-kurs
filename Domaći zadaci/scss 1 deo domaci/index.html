@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domaci 2 - SCSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <p>---------------------------- HTML TEMPLATE ---------------------------------</p>
+        <div class="post">
+            <h1>Naslov</h1>
+            <h2>Podnaslov</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam officia modi, iusto
+                reprehenderit fuga fugiat laudantium! Explicabo vero doloribus at tempora alias unde totam vel
+                voluptates,
+                nostrum</p>
+            <div class="input-group">
+                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="list-item1"><a href="" class="link">Link sa rednim brojem 1</a></li>
+                <li class="list-item2"><a href="" class="link">Link sa rednim brojem 2</a></li>
+                <li class="list-item3"><a href="" class="link alert">Link sa rednim brojem 3</a></li>
+                <li class="list-item4"><a href="" class="link">Link sa rednim brojem 4</a></li>
+                <li class="list-item5"><a href="" class="link">Link sa rednim brojem 5</a></li>
+            </ul>
+        </div>
+
+        <div class="input-group">
+            <div class="input-field">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="ime" placeholder="ime">
+            </div>
+            <div class="input-field2">
+                <label for="name">Prezime:</label>
+                <input type="text" id="name" name="prezime" placeholder="prezime">
+            </div>
+            <div class="input-field">
+                <label for="name">Zanimanje:</label>
+                <input type="text" id="name" name="zanimanje" placeholder="Zanimanje">
+            </div>
+        </div>
+    </div>
+    <p>---------------------------- HTML TEMPLATE ---------------------------------</p>
+    <hr>
+
+    <!-- Opis domaceg zadatka:  -->
+    <h2>Domaci zadatak</h2>
+    <h3>OPIS:</h3>
+
+    <h3>Headers, Paragraph</h3>
+    <p style="line-height: 200%;">Napisati SCSS za vec postojece HTML elemente tako da naslov bude obojen u zelenu boju
+        <span style="background-color: #008000; color: #fff;">(#008000)</span>, podnaslov u
+        svetlo zelenu <span style="background-color: #61da61; color: #fff;">(#61da61)</span> dok paragraf treba biti
+        obojen u tamno plavu <span style="background-color: #0303d6; color: #fff;">(#0303d6)</span>.</p>
+
+
+    <h3>Lists</h3>
+    <p style="line-height: 200%;">Na listu je potrebno staviti <span style="border: 2px solid #ca3620;">border: 2px
+            solid #ca3620;</span> dok na
+        svakom zasebnom elementu unutar liste je potrebno postaviti <span style="border: 1px solid #dbb717;">border: 1px
+            solid #dbb717;</span>. Napisati SCSS pravilo da svaki aktivan link ima plavu boju, vec posecen link zelenu,
+        dok link preko koga predjemo misem da dobije narandzastu boju, dok normalan link ima crnu boju. Ukoliko link
+        poseduje klasu "alert" potrebno je obojiti link u crvenu boju.</p>
+
+
+    <h3>Buttons</h3>
+
+    <p style="line-height: 200%;"></p>
+    Napisati SCSS pravilo tako da svako dugme koje poseduje atribut <strong>type = submit</strong> bude stilizovano na
+    sledeci nacin:
+    <code><br><br>
+        border: 2px solid green;<br>
+        padding: 5px 10px;<br>
+        background-color: transparent;<br>
+        color: green;<br>
+    </code>
+    </p>
+
+    <h3>Inputs</h3>
+
+    <p style="line-height: 200%;">
+        Stilizovati input polja tako da polja budu rasporedjena kao na slici:
+        <img src="./assets/Screenshot_4.jpg" alt="">
+        <br>
+        Postaviti sledeca svojstva za input elemente koja kao <strong>parent</strong> klasu imaju
+        <strong><code>.input-field</code></strong> koristeci ova svojstva:
+        <br>
+    </p>
+    <code>
+                border: 2px solid #FF9800;<br>
+                padding: 5px 15px;<br>
+                font-size: 16px;<br>
+                border-radius: 5px;<br>
+            </code>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+// SCSS
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//     h1{
+//     color: #008000;
+// };
+//     h2{
+//         color: #61da61;
+//     };
+//     p{
+//         color: #0303d6;
+//     };
+//     ul{
+//         border: 2px solid #ca3620;
+//         li{
+//             border: 1px solid #dbb717; 
+//             a {
+        
+//                 color: black;
+//                  &:active {
+//                    color: blue;
+//                  };
+//                  &:visited {
+//                    color: green;
+//                  };
+//                  &:hover {
+//                    color: orange;   
+//                  };
+//                  .alert{
+//                      color: red;
+//                  }
+//                }
+//         }
+//     };
+    .container{
+      .post{
+        h1{
+          color: green;
+        }
+        h2{
+          color: greenyellow;
+        }
+        p{
+          color: blue;
+        }
+      }
+      .list{
+        ul{
+          border: 2px solid red;
+
+          li{
+            border: 1px solid yellow;
+
+            .link{
+              &:visited{
+                color: greenyellow;
+              }
+              
+              &:hover{
+                color: orange;
+              }
+              &:active{
+                
+                color: blue;
+              }
+              
+              &.alert{     //.link.alert
+                color: red;
+              }
+
+            }
+          }
+        }
+      }
+
+    .input-group{
+
+      .btn{
+
+        &[type="submit"]{
+          
+          border: 2px solid green;
+          padding: 5px 10px;
+          background-color: transparent;
+          color: green;
+
+        }
+      }
+      div[class*="input-field"] {
+        label{
+          display: block;
+        }
+      }
+
+      .input-field{
+        input{
+          border: 2px solid #FF9800;
+padding: 5px 15px;
+font-size: 16px;
+border-radius: 5px;
+        }
+      }
+      
+    }
+
+
+
+
+
+    }
+
+    
