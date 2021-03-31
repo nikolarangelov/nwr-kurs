@@ -45,21 +45,33 @@ body {
   color: #00b1ff;
 }
 
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  overflow: hidden;
 }
 
-.wraper .firstPic {
-  float: left;
+.wraper-item-one {
+  background-image: url("/HERO/assets/NoPath - Copy.png");
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
 }
 
-.wraper .threePics {
+.wraper-item-one .overlay {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,34 +79,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.wraper .threePics .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wraper .threePics .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #3679c683;
+  cursor: pointer;
 }
 
-.wraper img {
-  width: 700px;
-  height: 700px;
+.wraper-item-one p {
+  font-size: xx-large;
+}
+
+.wraper-item-two {
+  background-image: url("/HERO/assets/ipad-820272_1920.jpg");
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.wraper-item-three {
+  background-image: url("/HERO/assets/office-620822_1920.jpg");
+}
+
+.wraper-item-four {
+  background-image: url("/HERO/assets/entrepreneur-593358_1920.jpg");
 }
 
 .services {
-  margin-top: 30px;
+  margin-top: 10px;
   padding-top: 30px;
   margin-bottom: 30px;
   height: 500px;
@@ -134,14 +150,96 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.services .solutions .first:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.services .solutions .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .solutions .second:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.services .solutions .third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .solutions .third:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.services .solutions .fourth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .solutions .fourth:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .services .solutions img {
   margin-right: 30px;
-  border: 5px solid #a8cdee;
+  border: 10px solid #a8cdee;
   border-radius: 20px;
+  padding: 10px 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #484848;
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
