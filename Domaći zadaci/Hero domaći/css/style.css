@@ -18,6 +18,16 @@ body {
   height: 6rem;
 }
 
+.nav a {
+  text-decoration: none;
+  color: #484848;
+}
+
+.nav a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .nav h1 {
   font-weight: lighter;
 }
@@ -50,23 +60,25 @@ body {
 }
 
 .wraper {
-  width: 100%;
-  height: 50vh;
   display: -ms-grid;
   display: grid;
-  grid-gap: 15px;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
-  overflow: hidden;
+  grid-gap: 10px;
+  -ms-grid-columns: 50% 25% 25%;
+      grid-template-columns: 50% 25% 25%;
+  -ms-grid-rows: 50vh 50vh;
+      grid-template-rows: 50vh 50vh;
+      grid-template-areas: "one . ." "one four four";
 }
 
 .wraper-item-one {
   background-image: url("/HERO/assets/NoPath - Copy.png");
   -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: one;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wraper-item-one .overlay {
@@ -96,17 +108,27 @@ body {
 
 .wraper-item-two {
   background-image: url("/HERO/assets/ipad-820272_1920.jpg");
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wraper-item-three {
   background-image: url("/HERO/assets/office-620822_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wraper-item-four {
   background-image: url("/HERO/assets/entrepreneur-593358_1920.jpg");
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .services {
@@ -127,6 +149,7 @@ body {
           justify-content: center;
   font-size: xx-large;
   font-weight: 300;
+  margin-bottom: 2em;
 }
 
 .services .solutions {
