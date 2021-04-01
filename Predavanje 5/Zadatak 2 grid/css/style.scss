@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows:50vh 50vh;
+    grid-gap: 10px;
+    grid-template-areas:
+    "first . ."
+    "first last last " 
+    ;
+    overflow: hidden;
+
+
+    &-item{
+        background-color: rebeccapurple;
+    }
+    .first{
+        grid-area: first;
+
+    }
+    .last{
+        grid-area: last;
+    }
+}

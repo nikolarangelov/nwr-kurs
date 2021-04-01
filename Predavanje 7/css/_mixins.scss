@@ -1,0 +1,27 @@
+@mixin mobile() {
+    @media  screen and (max-width: 576px) {
+        @content;
+    }
+}
+@mixin responsive($device) {
+    
+    @if($device == mobile){
+        @media only (max-width: 576px){
+            @content;
+        }
+    }
+    @if($device == desktop){
+        @media only (min-width: 1199px){
+            @content;
+        }
+    }
+    @if($device == tablet){
+        @media only (max-width: 1199px){
+            @content;
+        }
+    }
+        
+    
+
+
+}

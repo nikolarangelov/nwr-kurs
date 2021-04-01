@@ -1,0 +1,30 @@
+// @mixin mobile() {
+//   @media only screen and (max-width: 576px) {
+//     @content;
+//   }
+// }
+
+// @mixin responsive($device) {
+//   @if ($device == mobile) {
+//     @media only screen and (max-width: 576px) {
+//       @content;
+//     }
+//   }
+
+//   @if ($device == tablet) {
+//     @media only screen and (max-width: 1199px) and (min-width: 577px) {
+//       @content;
+//     }
+//   }
+
+//   @if ($device == desktop) {
+//     @media only screen and (min-width: 1200px) {
+//       @content;
+//     }
+//   }
+// }
+@mixin responsive {
+  @media only screen and (max-width:1000px) {
+    @content;
+  }
+}

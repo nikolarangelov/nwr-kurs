@@ -1,0 +1,33 @@
+@import "mixins";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+// ZADATAK 1 ---------------
+.list-grid {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+  @include responsive(){
+      grid-template-columns: repeat(5, 1fr);
+    }
+     & > div{
+         background-color: indigo;
+         border-radius: 8px;
+         height: 80px;
+         @include responsive(){
+             height: 500px;
+         }
+     }
+
+ 
+}
+// ZADATAK 1 --------------

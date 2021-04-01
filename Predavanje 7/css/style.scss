@@ -1,0 +1,28 @@
+@import "mixins";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box-grid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    @include responsive(tablet){
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        width: 100%;
+        height: 150px;
+        background-color: rebeccapurple;
+        display: inline-block;
+       
+        @include mobile() {
+            background-color: greenyellow;
+        }
+
+    }
+}

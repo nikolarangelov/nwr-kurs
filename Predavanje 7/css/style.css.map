@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../zadatak 1/css/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}EAEL,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,eAAe;EACtC,QAAQ,EAAE,IAAI;CAgBjB;;ACTO,MAAM,EAAE,SAAS,EAAE,MAAM;EDXjC,AAAA,SAAS,CAAA;IAMD,qBAAqB,EAAE,GAAG;GAcjC;;;AApBD,AASI,SATK,CASL,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,aAAa;EAC/B,OAAO,EAAE,YAAY;CAMxB;;ACzBD,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;EDMxC,AASI,SATK,CASL,IAAI,CAAA;IAOI,gBAAgB,EAAE,WAAW;GAGpC",
+    "sources": [
+        "style.scss",
+        "_mixins.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

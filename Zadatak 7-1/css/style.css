@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.list-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .list-grid {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.list-grid > div {
+  background-color: indigo;
+  border-radius: 8px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .list-grid > div {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
