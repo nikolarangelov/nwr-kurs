@@ -1,0 +1,55 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "plava plava crvena crvena"
+    "plava plava crvena crvena"
+    "plava plava zuta zuta"
+    "plava plava zelena zelena"
+    "ljubicasta ljubicasta ljubicasta crna"
+    "ljubicasta ljubicasta ljubicasta crna";
+
+  &-item {
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+
+    &.plava {
+      grid-area: plava;
+      background-color: blue;
+    }
+
+    &.crvena {
+      grid-area: crvena;
+      background-color: red;
+    }
+
+    &.zuta {
+      grid-area: zuta;
+      background-color: yellow;
+    }
+
+    &.zelena {
+      grid-area: zelena;
+      background-color: green;
+    }
+
+    &.ljubicasta {
+      grid-area: ljubicasta;
+      background-color: purple;
+    }
+
+    &.crna {
+      grid-area: crna;
+      background-color: black;
+    }
+  }
+}

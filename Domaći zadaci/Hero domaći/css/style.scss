@@ -1,4 +1,16 @@
 @import "variables";
+// MIXINS--------------------------------------------------------------
+
+@mixin mobile {
+    @media only screen and (max-width: 576px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and(min-width: 767px) and (max-width: 991.98px) {
+        @content;
+    }
+}
 @mixin bg-img {
     background-position: center;
     background-size: cover;
@@ -8,8 +20,7 @@
 
 
 
-
-
+// ..........................................................................................
 
 body{
     box-sizing: border-box;
@@ -24,6 +35,9 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     height: 6rem;
+    @include tablet(){
+       width: 100%;
+    }
     a{
         text-decoration: none;
         color: $font_color;
@@ -60,10 +74,17 @@ body{
             &:hover{
                 text-decoration: underline;
                 }
+              
+                &.icon{
+                    display: none;
+                }
             }
         }
     }
 }
+
+
+
 
 .wraper{
     
@@ -72,8 +93,26 @@ body{
     grid-template-columns:50% 25% 25%;
     grid-template-rows: 50vh 50vh;
     grid-template-areas: 
-    "one . ."
+    "one two three"
     "one four four";
+    @include mobile(){
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas:
+        "one one"
+        "two three"
+        "four four";
+    }
+    @include tablet(){
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 25vh 25vh 25vh 25vh 25vh;
+        grid-template-areas:
+        "one one"
+        "one one"
+        "two three"
+        "four four"
+        "four four";
+    }
    
 
    
@@ -111,18 +150,21 @@ body{
         &-two{
             background-image: url('/HERO/assets/ipad-820272_1920.jpg');
             @include bg-img();
+            grid-area: two;
             
         }
 
         &-three{
             background-image: url('/HERO/assets/office-620822_1920.jpg');
             @include bg-img();
+            grid-area: three;
         }
 
         &-four{
             background-image: url('/HERO/assets/entrepreneur-593358_1920.jpg');
-            grid-area: four;
+            
             @include bg-img();
+            grid-area: four;
             
         }
 
@@ -152,6 +194,7 @@ body{
        display: flex;
        flex-direction: row;
        justify-content: center;
+      
        
        .first{
            display: flex;
