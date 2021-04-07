@@ -1,0 +1,24 @@
+
+================================================================
+1. Domaci GRID: 
+FOLDER: GRID
+
+- Koristeci SCSS i HTML5 napraviti stranicu kao na prilozenim slikama
+koristeci flexbox, grid itd. Zatim napisati @media upite za odradjenu stranicu
+tako da bude prikazana u odredjenom rasporedu kao sa slike za odgovarajucu 
+rezoluciju dostavljenu u ovom zadatku.
+
+Prilozene slike i rezolucije:
+
+naziv slike:		rezolucije:
+Web Browser:		1920 x 1080
+iPad landscape mode:	1024px
+iPad portrait mode:	768px
+iPhone X/XS:		375px
+
+================================================================
+
+Ukoliko imate bilo kakvo pitanje ili nedoumicu oko nekog zadatka. Problem oko resavanja ili primedbu 
+Slobodno pisite na mail: aleksandar.petrovic@itcentar.rs ili na viber grupu.
+
+SRECAN RAD!!!!
