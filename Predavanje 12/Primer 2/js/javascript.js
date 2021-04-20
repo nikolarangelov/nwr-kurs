@@ -80,5 +80,6 @@ let Automobil = {
        Boja: ${this.Boja}`
     }
    
-};
-console.log(Automobil.osnovniPodaci());
+}; 
+
+document.write(Automobil.osnovniPodaci());

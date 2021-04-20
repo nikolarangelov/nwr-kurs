@@ -1,50 +1,50 @@
-// //Opseg vazenja funkcija promenljivih
+//Opseg vazenja funkcija promenljivih
 
-// let globalna = 10;
+let globalna = 10;
 
-// function globalnaFunkcija(){
+function globalnaFunkcija(){
 
-//     let lokalnaPromenljiva = 5;
-//     //globalna funkcija
-//     console.log(`Globalna-------------------`);
-//     console.log(globalna);
-//     console.log(`Globalna-------------------`);
-//     console.log(`${lokalnaPromenljiva}, ovo je lokalna promenljiva`);
+    let lokalnaPromenljiva = 5;
+    //globalna funkcija
+    console.log(`Globalna-------------------`);
+    console.log(globalna);
+    console.log(`Globalna-------------------`);
+    console.log(`${lokalnaPromenljiva}, ovo je lokalna promenljiva`);
 
-//     //lokalna funkcija
+    //lokalna funkcija
 
-//     function globalaFunkcija() {
-//         let lokalnaPromenljiva = 5;
-//         var varPromenljiva = 10;
+    function globalaFunkcija() {
+        let lokalnaPromenljiva = 5;
+        var varPromenljiva = 10;
     
-//         // globalna funkcija
-//         console.log('===== globalna funkcija =====');
-//         console.log('let', globala);
-//         console.log('let', lokalnaPromenljiva);
-//         console.log('var', varPromenljiva);
-//         console.log('===== globalna funkcija =====');
+        // globalna funkcija
+        console.log('===== globalna funkcija =====');
+        console.log('let', globala);
+        console.log('let', lokalnaPromenljiva);
+        console.log('var', varPromenljiva);
+        console.log('===== globalna funkcija =====');
     
-//         lokalnaFunkcija();
+        lokalnaFunkcija();
     
-//         if (true) {
-//             var test = 1;
-//             let test1 = 2;
-//         }
+        if (true) {
+            var test = 1;
+            let test1 = 2;
+        }
     
-//         console.log(test);
+        console.log(test);
     
-//         function lokalnaFunkcija() {
-//             console.log('lokalna funkcija');
-//             console.log('lokalna funkcija:', lokalnaPromenljiva);
-//         }
-//     }
+        function lokalnaFunkcija() {
+            console.log('lokalna funkcija');
+            console.log('lokalna funkcija:', lokalnaPromenljiva);
+        }
+    }
     
 
 
 
-// }
-// globalnaFunkcija();
-// console.log(globalna);
+}
+globalnaFunkcija();
+console.log(globalna);
 
 //zadatak a--------------------------------
 let ime = `Nikola`;
@@ -61,3 +61,4 @@ function odstampaj(){
     console.log(`Omiljena boja: ${omiljenaBoja}`);
 }
 odstampaj();
+// kraj zadatka;
