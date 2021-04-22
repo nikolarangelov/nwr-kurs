@@ -42,22 +42,59 @@
      dimenzije: {
          visina: 520,
          sirina: 20,
-         jedinica_dimenzije: 'cm'
+         jedinicaDimenzije: 'cm'
      },
      tezina: 50,
      jedinicaTezine: 'kg'
  };
- let spanId = document.getElementById('id');
- let spanNaziv = document.getElementById('naziv');
- let spanOpis = document.getElementById('opis');
- let spanDimenzije = document.getElementById('dimenzije');
- let spanTezina = document.getElementById('tezina');
- spanId.innerHTML = predmet.id;
- spanNaziv.innerHTML = predmet.naziv;
- spanOpis.innerHTML = predmet.opis;
- spanDimenzije.innerHTML = predmet.dimenzije.visina;
- spanDimenzije.innerHTML = predmet.dimenzije.sirina;
- spanDimenzije.innerHTML = predmet.dimenzije.jedinica_dimenzije;
- spanTezina.innerHTML = predmet.tezina;
- 
+function prikaziPodatke(){
+    let spanId = document.getElementById('id');
+    let spanNaziv = document.getElementById('naziv');
+    let spanOpis = document.getElementById('opis');
+    let spanDimenzije = document.getElementById('dimenzije');
+    let spanTezina = document.getElementById('tezina');
+    spanId.innerHTML = predmet.id;
+    spanNaziv.innerHTML = predmet.naziv;
+    spanOpis.innerHTML = predmet.opis;
+    spanDimenzije.innerHTML = `Visina: ${predmet.dimenzije.visina}${predmet.dimenzije.jedinicaDimenzije};
+                               Sirina: ${predmet.dimenzije.sirina}${predmet.dimenzije.jedinicaDimenzije}`
+    
+    spanTezina.innerHTML = predmet.tezina + predmet.jedinicaTezine;
+    
+};
+prikaziPodatke();
 
+/**Primer 2 */
+
+let stranica = {
+    bojaPozadine: '#e11111',
+    bojaTeksta:'#965wdw',
+    postaviBojuPozadine: function(boja){
+        this.bojaPozadine = boja;
+    },
+    postaviBojuTeksta: function(boja){
+        this.bojaTeksta = boja;
+    }
+};
+stranica.postaviBojuPozadine('orange');
+stranica.postaviBojuTeksta('white');
+// Inicijalno postavljanje boja
+
+function primeniBoje(){
+    document.body.style.backgroundColor = stranica.bojaPozadine;
+    document.body.style.color = stranica.bojaTeksta;
+
+};
+primeniBoje();
+
+//  Zadtak 2
+// 
+const paragraf = document.getElementById('paragraf');
+const h1Naslov = document.querySelector('h1');
+function promenaAtributaElementa(boja, velicinaFonta, htmlElement){
+    // telo funkcije
+    htmlElement.style.color = boja;
+    htmlElement.style.fontSize = velicinaFonta;
+};
+promenaAtributaElementa('red', '12px', paragraf);
+promenaAtributaElementa('black', '12px', h1Naslov);
