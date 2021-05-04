@@ -78,6 +78,29 @@ function ispitivanje(){
                 document.body.style.backgroundColor = " #34495e";
                } else if(inputPolje == 7){
                 document.body.style.backgroundColor = " #95a5a6";
-               } 
+               } else{
+                   document.write('Morate uneti broj od jedan do sedam')
+               }
             }
+}
+function broj1(){
+    document.body.style.backgroundColor = "#2ecc71";
+}
+function broj2(){
+    document.body.style.backgroundColor = "#2980b9";
+}
+function broj3(){
+    document.body.style.backgroundColor = " #8e44ad";
+}
+function broj4(){
+    document.body.style.backgroundColor = " #e67e22";
+}
+function broj5(){
+    document.body.style.backgroundColor = " #e74c3c";
+}
+function broj6(){
+    document.body.style.backgroundColor = " #34495e";
+}
+function broj7(){
+    document.body.style.backgroundColor = " #95a5a6";
 }
