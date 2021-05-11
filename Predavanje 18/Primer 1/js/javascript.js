@@ -17,3 +17,13 @@ for ( let i = 0; i < 10; i++) {
 for (let i=1; i < 21; i++) {
     console.log(`Interakcija broj ${i}`)
 }
+/** Uvecavanje za dva koraka, umesto za samo jedan */
+
+for (let i = 0; i < 10; i += 2) {
+    console.log(i);
+}
+console.clear()
+/** Zadatak 2 */
+for (let i = 10; i < 100; i += 4) {
+    console.log(i);
+}
