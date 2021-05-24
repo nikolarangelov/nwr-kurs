@@ -120,4 +120,13 @@ function printAll() {
     }
 }
 printNameEmail();
-printAll();
+
+funtion printObjectProperties() {
+    for (let record of podaci) {
+        for ( let key in record){
+            console.log(`${key} vrednost: ${record}`);
+        }
+        console.log('***********************')
+    }
+
+}

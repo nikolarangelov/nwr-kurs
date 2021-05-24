@@ -1,28 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontrola toka IF ELSE</title>
+    <title>JS - Kontrola toka IF Else</title>
 </head>
-<body>
-    <h1>Kontrola toka</h1>
-    <h2>IF/ELSE Grananje</h2>
 
-    <input type="text" name="broj" id="broj">
+<body>
+    <h1>JS - Kontrola toka </h1>
+    <h2>IF ELSE grananje</h2>
+
+    <input type="text" id="broj" name="broj">
 
     <button onclick="ispitivanje()">Ispitaj</button>
 
+    <hr>
+    <h2>Odabir boje pozadine:</h2>
+    <input type="text" id="boja" name="boja" placeholder="uneti broj od 1 - 7">
+    <button onclick="obojiPozadinu(null)">Primeni</button>
     <ul>
-        <li onclick="broj1()">1 - #2ecc71</li>
-        <li onclick="broj2()">2 - #2980b9</li>
-        <li onclick="broj3()">3 - #8e44ad</li>
-        <li onclick="broj4()">4 - #e67e22</li>
-        <li onclick="broj5()">5 - #e74c3c</li>
-        <li onclick="broj6()">6 - #34495e</li>
-        <li onclick="broj7()">7 - #95a5a6</li>
+        <li onclick="obojiPozadinu(1)">1 - #2ecc71</li>
+        <li onclick="obojiPozadinu(2)">2 - #2980b9</li>
+        <li onclick="obojiPozadinu(3)">3 - #8e44ad</li>
+        <li onclick="obojiPozadinu(4)">4 - #e67e22</li>
+        <li onclick="obojiPozadinu(5)">5 - #e74c3c</li>
+        <li onclick="obojiPozadinu(6)">6 - #34495e</li>
+        <li onclick="obojiPozadinu(7)">7 - #95a5a6</li>
     </ul>
+
+    <button onclick="izbor(null)">Napravi izbor</button>
+
+
+    <h2>Odabir operacije:</h2>
+
+    <p>Vrednosti:</p>
+
+    <label for="a">A:</label>
+    <input type="text" id="a">
+
+    <label for="b">B:</label>
+    <input type="text" id="b">
+    <hr>
+    <p>odaberi operaciju?</p>
+    <button onclick="izracunaj('sabiraj')">Sabiranje</button>
+    <button onclick="izracunaj('oduzimaj')">Oduzimanje</button>
+    <button onclick="izracunaj('pomnozi')">Mnozenje</button>
+    <button onclick="izracunaj('podeli')">Deljenje</button>
+
+    <p>Rezultat?</p>
+    <p id="rezultat"></p>
 
     <script src="./js/javascript.js"></script>
 </body>
+
 </html>

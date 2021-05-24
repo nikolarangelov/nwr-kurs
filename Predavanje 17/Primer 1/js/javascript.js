@@ -129,11 +129,11 @@
      console.log((g > d)) // false
      console.log((g < f)) // true
      console.log((r == d || f > g)) // true
-
+     
+     console.clear()
      // Zadatak 2
        
-        console.clear()
-      (!((d > e) || (f < g)) && r == d)  //true
-       ((f == g || g < f) && !(e > g))    //false
-       (!(f > g || d == r) || !((f < e) || (g < r))) // false 
-      (d > 2 || g == e && f > e || e < d)  //true
+     console.log( (!((d > e) || (f < g)) && r == d) );               //true
+     console.log(((f == g || g < f) && !(e > g)) );                //false
+     console.log((!(f > g || d == r) || !((f < e) || (g < r))));  // false 
+     console.log(  (d > 2 || g == e && f > e || e < d));           //true

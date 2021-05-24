@@ -1,0 +1,73 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background: #c6dce2;
+  background: -webkit-linear-gradient(to right, #d3d032, #750828);
+  -webkit-box-shadow: 0px 0px 5px 20px gray;
+          box-shadow: 0px 0px 5px 20px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .alert {
+  color: red;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  color: #ff0000;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background: #c6dce2;
+  background: -webkit-linear-gradient(to right, #d3d032, #750828);
+  -webkit-box-shadow: 0px 0px 5px 20px gray;
+          box-shadow: 0px 0px 5px 20px gray;
+}
+
+.box .alert {
+  color: red;
+}
+
+.message-warning {
+  margin-top: 2rem;
+  color: orange;
+}
+
+.message-warning:hover {
+  color: #ffcccc;
+}
+
+.message-alert {
+  color: red;
+}
+
+.message-alert:hover {
+  color: #ffedcc;
+}
+
+.message-info {
+  color: blue;
+}
+
+.message-info:hover {
+  color: #4dff4d;
+}
+/*# sourceMappingURL=style.css.map */

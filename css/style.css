@@ -1,0 +1,75 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "plava plava crvena crvena" "plava plava crvena crvena" "plava plava zuta zuta" "plava plava zelena zelena" "ljubicasta ljubicasta ljubicasta crna" "ljubicasta ljubicasta ljubicasta crna";
+}
+
+.grid-item {
+  width: 100%;
+  min-height: 50px;
+  height: 100%;
+}
+
+.grid-item.plava {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: plava;
+  background-color: blue;
+}
+
+.grid-item.crvena {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: crvena;
+  background-color: red;
+}
+
+.grid-item.zuta {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: zuta;
+  background-color: yellow;
+}
+
+.grid-item.zelena {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: zelena;
+  background-color: green;
+}
+
+.grid-item.ljubicasta {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: ljubicasta;
+  background-color: purple;
+}
+
+.grid-item.crna {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: crna;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */

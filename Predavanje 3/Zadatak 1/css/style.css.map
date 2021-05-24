@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAaA,AACI,UADM,CACN,IAAI,CAAA;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EAfjB,UAAU,EAAE,OAAO;EAAG,+BAA+B;EACrD,UAAU,EAAE,mDAAmD;EAAG,gCAAgC;EAClG,UAAU,EAAE,2CAA2C;EAAE,sEAAsE;EAC/H,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,IAAI;CAalB",
     "sources": [
-        "../Zadatak 1/css/style.scss"
+        "style.scss"
     ],
     "names": [],
     "file": "style.css"

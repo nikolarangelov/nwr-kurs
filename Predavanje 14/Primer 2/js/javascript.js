@@ -50,6 +50,8 @@ let recenica1 = 'I would teach peace rather than war. I would inculcate love rat
 console.log(recenica1.substr(55,4));
 
 // D)
-console.log(recenica1.slice(-63,-58));
+// console.log(recenica1.slice(-63,-58));
 
 
+
+ 
