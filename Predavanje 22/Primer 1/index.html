@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DOM methods</title>
+
+    <style>
+        .google-link {
+            font-weight: bold;
+            color: green;
+            font-size: 1.2rem;
+        }
+
+        div[data-tooltip] {
+            position: relative;
+        }
+
+        #tooltip {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            padding: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS - DOM methods:</h1>
+
+    <ul id="lista">
+        <li class="blue">1</li>
+        <li id="new">
+            <a href="#">novi link</a>
+        </li>
+        <li>3</li>
+        <li>4</li>
+        <li>
+            <a class="google-link" href="https://www.google.com/" target="_blank">Go to Google COM</a>
+            <a class="google-link" href="https://www.google.rs/" target="_blank">Go to Google RS</a>
+            <a class="google-link" href="https://www.google.de/" target="_blank">Go to Google DE</a>
+            <a class="google-link" href="https://www.google.hr/" target="_blank">Go to Google HR</a>
+        </li>
+    </ul>
+
+    <img class="img" src="https://picsum.photos/200/300" alt="image">
+    <button onclick="removeSrc()">Remove src</button>
+
+    <!-- Zadatak 2 minimal logic for tooltip -->
+
+    <div data-tooltip onclick="tooltip(event)" data-content="Lorem Ipsum new content!!!!">
+        Click on me to see more content!
+        <div id="tooltip"></div>
+    </div>
+
+    <script src="./js/javascript.js"></script>
+
+</body>
+
+</html>
+
